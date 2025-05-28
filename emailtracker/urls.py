@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import track_email_event
+from . import views
 
 urlpatterns = [
-    path('track/', track_email_event, name='track_email_event'),
+    path('track/', views.track_email, name='track_email'),
 ]
